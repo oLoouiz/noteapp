@@ -15,10 +15,14 @@ interface NoteDao {
     @Query("SELECT * FROM Note")
     fun list():List<Note>
 
-    /*
+
     @Delete
     fun delete(note: Note)
 
+    @Update
+    fun update(note: Note)
+
+/*
     @Query("SELECT * FROM Note WHERE :id LIMIT 1")
     fun get(id: Int): Note
 
